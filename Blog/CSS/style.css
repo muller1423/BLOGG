@@ -1,0 +1,315 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+}
+body {
+  background-color: #white;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  height: 600px;
+  background-image: 
+  url(../IMG/fondo_forest.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+img {
+  vertical-align: top;
+}
+/* -------------------nav------------------------ */
+.hamburguesa {
+  display: none;
+  /* height: 31px;
+  width: 31px;
+  background-color: lightgoldenrodyellow; */
+}
+.hamburguesa i {
+  font-size: 30px;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: white;
+  z-index: 1;
+}
+.contenedor_nav {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.enlaces a {
+  display: inline-block;
+  padding: 5px 0;
+  margin-left: 17px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: 300;
+  font-size: 17px;
+  color: #black;
+}
+nav .enlaces a:hover {
+  color: #000000;
+  border-bottom: 3px solid rgb(145, 45, 145);
+  transition: 0.5s;
+}
+.logo {
+  font-size: 40px;
+}
+.texto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.texto > h1 {
+  font-size: 80px;
+}
+.texto > h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 0;
+  overflow: hidden;
+  text-align: center;
+}
+/* -------------------section life----------------------- */
+.after::after {
+  content: "";
+  margin: auto;
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: rgb(245, 107, 66);
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+.contenedor h3 {
+  font-size: 33px;
+  font-weight: 300;
+  color: #000000;
+}
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.card_content .life img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card_content .life {
+  width: 100%;
+  height: 80%;
+}
+.card_content .texto {
+  height: 20%;
+  background-color: #ffffff;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.card_content {
+  width: 31%;
+  height: 400px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+/* -------------------------sectioin goals------------------ */
+.goal_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 45px;
+}
+.goal {
+  width: 38%;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.goal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: ease-in-out 0.4s;
+}
+.goal img:hover {
+  transform: scale(1.2);
+}
+.goal_text {
+  text-align: left;
+  width: 58%;
+}
+.goal_text h4 {
+  margin-bottom: 10px;
+  color: rgb(224, 105, 224);
+  text-transform: uppercase;
+}
+/* ----------------------------section ideologia */
+.leyes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ley_content {
+  width: 30%;
+}
+.ley img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ley {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+/* ----------------------footer */
+footer {
+  background-image: linear-gradient(#eeeeee 0%, #84AA7E 200%);
+}
+.logo_footer {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 45px;
+}
+.logo_footer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.social {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social i {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 50px;
+  transition: all ease-in 0.3s;
+}
+.social i:hover {
+  transform: scale(1.2);
+}
+.fa-facebook:hover {
+  color: #16a9fc;
+}
+.fa-whatsapp:hover {
+  color: #0dc043;
+}
+.fa-telegram:hover {
+  color: #2ea6da;
+}
+/* class active */
+
+/* renponsive */
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav {
+    height: 80px;
+  }
+  .enlaces {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    height: calc(100vh - 80px);
+    width: 50%;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    /* z-index: 5; */
+  }
+  .enlaces a {
+    opacity: 0;
+  }
+  .hamburguesa {
+    display: initial;
+  }
+}
+.active {
+  transform: translateX(0%);
+}
+@keyframes nav_enlaces {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .texto > h1 {
+    font-size: 60px;
+  }
+  .texto > h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .contenedor h3 {
+    font-size: 23px;
+  }
+  .goal_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .goal {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .goal_text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    flex-direction: column;
+  }
+  .card_content {
+    margin: auto;
+    margin-bottom: 45px;
+    width: 80%;
+  }
+  .yo {
+    padding-bottom: 0;
+  }
+  .interes {
+    padding-bottom: 0;
+  }
+  .social {
+    width: 100%;
+  }
+}
